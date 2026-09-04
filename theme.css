@@ -1,0 +1,251 @@
+/* ==========================================================================
+   Atom One Theme for Obsidian (Light & Dark)
+   With Soft, Highly Readable Text & Balanced Sidebar Colors
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Atom One Light Mode
+   -------------------------------------------------------------------------- */
+.theme-light {
+  /* الخلفيات الأساسية */
+  --background-primary: #FAFAFA !important;
+  --background-primary-alt: #FAFAFA !important;
+  --background-secondary: #EAEAEB !important;
+  --background-secondary-alt: #EAEAEB !important;
+
+  /* حواف هادئة للمود الفاتح */
+  --background-modifier-border: #D0D0D2 !important;
+  --background-modifier-border-hover: #A0AAB5 !important;
+  --background-modifier-border-focus: #708090 !important;
+  --background-modifier-form-field: #FFFFFF !important;
+
+  /* النصوص وتوضيح خطوط الملفات */
+  --text-normal: #2A2C33 !important;
+  --text-muted: #555863 !important;
+  --text-faint: #7A7D8A !important;
+  --text-disabled: #A0A1A7 !important;
+  --text-accent: #4A6B94 !important;
+  --text-accent-hover: #355275 !important;
+
+  --nav-item-color: #4B4E5A !important;
+  --nav-item-color-hover: #111215 !important;
+  --nav-item-color-active: #4A6B94 !important;
+
+  --text-selection: #526FFF22 !important;
+  --text-highlight-bg: #526FFF22 !important;
+
+  /* العناصر التفاعلية */
+  --interactive-accent: #4A6B94 !important;
+  --interactive-accent-hover: #355275 !important;
+  --interactive-hover: #E2E2E3 !important;
+  --interactive-selected: #D5D5D8 !important;
+
+  --titlebar-background: #EAEAEB !important;
+  --status-bar-background: #EAEAEB !important;
+  --tab-background-active: #FAFAFA !important;
+  --tab-container-background: #EAEAEB !important;
+
+  /* البرمجة والعناوين */
+  --code-background: #F5F5F5 !important;
+  --code-normal: #383A42 !important;
+  --code-comment: #A0A1A7 !important;
+  --code-keyword: #A626A4 !important;
+  --code-function: #4078F2 !important;
+  --code-string: #50A14F !important;
+  --code-number: #986801 !important;
+  --code-property: #E45649 !important;
+  --code-operator: #0184BC !important;
+
+  --h1-color: #E45649 !important;
+  --h2-color: #E45649 !important;
+  --h3-color: #E45649 !important;
+  --h4-color: #E45649 !important;
+  --h5-color: #E45649 !important;
+  --h6-color: #E45649 !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. Atom One Dark Mode
+   -------------------------------------------------------------------------- */
+.theme-dark {
+  /* الخلفيات الأساسية */
+  --background-primary: #282C34 !important;
+  --background-primary-alt: #282C34 !important;
+  --background-secondary: #21252B !important;
+  --background-secondary-alt: #21252B !important;
+
+  /* حواف هادئة غير فاقعة */
+  --background-modifier-border: #333842 !important;
+  --background-modifier-border-hover: #4B5263 !important;
+  --background-modifier-border-focus: #5C6370 !important;
+  --background-modifier-form-field: #21252B !important;
+
+  /* تعديل إضاءة الخطوط للتخلص من البهتان مع الحفاظ على الهدوء */
+  --text-normal: #B0B8C5 !important;  /* نص أساسي أوضح بلمسة هادئة */
+  --text-muted: #828B99 !important;   /* رفع إضاءة النصوص الفرعية */
+  --text-faint: #636B78 !important;
+  --text-disabled: #5C6370 !important;
+  --text-accent: #61AFEF !important;
+  --text-accent-hover: #82C2F5 !important;
+
+  /* تخصيص لون قائمة الملفات والأيقونات الشانبية */
+  --nav-item-color: #A0A8B6 !important;
+  --nav-item-color-hover: #E5C07B !important;
+  --nav-item-color-active: #61AFEF !important;
+
+  --text-selection: #3E4451 !important;
+  --text-highlight-bg: #3E4451 !important;
+
+  /* ألوان التفاعل */
+  --interactive-accent: #3B5278 !important;
+  --interactive-accent-hover: #4C6A9C !important;
+  --interactive-hover: #2C313A !important;
+  --interactive-selected: #2C313A !important;
+
+  --titlebar-background: #21252B !important;
+  --status-bar-background: #21252B !important;
+  --tab-background-active: #282C34 !important;
+  --tab-container-background: #21252B !important;
+
+  /* البرمجة والعناوين */
+  --code-background: #21252B !important;
+  --code-normal: #ABB2BF !important;
+  --code-comment: #5C6370 !important;
+  --code-keyword: #C678DD !important;
+  --code-function: #61AFEF !important;
+  --code-string: #98C379 !important;
+  --code-number: #D19A66 !important;
+  --code-property: #E06C75 !important;
+  --code-operator: #56B6C2 !important;
+
+  --h1-color: #E06C75 !important;
+  --h2-color: #D19A66 !important;
+  --h3-color: #E5C07B !important;
+  --h4-color: #98C379 !important;
+  --h5-color: #61AFEF !important;
+  --h6-color: #C678DD !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. تحسين وضوح قائمة الملفات وشريط الأدوات الجانبي (File Explorer)
+   -------------------------------------------------------------------------- */
+
+.nav-file-title,
+.nav-folder-title,
+.tree-item-self {
+  color: var(--nav-item-color) !important;
+  font-weight: 500 !important;
+}
+
+.nav-file-title:hover,
+.nav-folder-title:hover,
+.tree-item-self:hover {
+  color: var(--text-normal) !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. فواصل وأشرطة هادئة
+   -------------------------------------------------------------------------- */
+
+.editing-toolbar,
+div[class*="toolbar"],
+.workspace-tab-header-container,
+.workspace-tab-header,
+.workspace-leaf-content {
+  border-color: var(--background-modifier-border) !important;
+  box-shadow: none !important;
+}
+
+.workspace-leaf.mod-active {
+  border-color: var(--background-modifier-border-focus) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. تخطيط الإعدادات التفاعلي والديناميكي (Dynamic Responsive Settings)
+   -------------------------------------------------------------------------- */
+
+.modal.mod-settings .vertical-tab-content,
+.vertical-tab-content {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 16px 24px !important;
+  overflow-x: hidden !important;
+}
+
+.setting-item {
+  display: flex !important;
+  flex-flow: row wrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 12px 16px !important;
+  width: 100% !important;
+  padding: 12px 0 !important;
+  border-top: 1px solid var(--background-modifier-border) !important;
+  box-sizing: border-box !important;
+}
+
+.setting-item:first-child {
+  border-top: none !important;
+}
+
+.setting-item-info {
+  flex: 1 1 240px !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+}
+
+.setting-item-name {
+  font-size: 0.95em !important;
+  font-weight: 600 !important;
+  color: var(--text-normal) !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.4 !important;
+}
+
+.setting-item-description {
+  font-size: 0.85em !important;
+  color: var(--text-muted) !important;
+  white-space: normal !important;
+  word-break: break-word !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.3 !important;
+  margin-top: 4px !important;
+}
+
+.setting-item-control {
+  flex: 0 1 auto !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  max-width: 100% !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. قواعد التنسيق الموحدة (Syntax Highlighting & Markdown)
+   -------------------------------------------------------------------------- */
+
+.cm-s-obsidian span.cm-comment, .token.comment { color: var(--code-comment) !important; font-style: italic; }
+.cm-s-obsidian span.cm-keyword, .token.keyword { color: var(--code-keyword) !important; }
+.cm-s-obsidian span.cm-function, .cm-s-obsidian span.cm-def, .token.function { color: var(--code-function) !important; }
+.cm-s-obsidian span.cm-string, .token.string { color: var(--code-string) !important; }
+.cm-s-obsidian span.cm-number, .cm-s-obsidian span.cm-atom, .token.number { color: var(--code-number) !important; }
+.cm-s-obsidian span.cm-property, .token.property { color: var(--code-property) !important; }
+.cm-s-obsidian span.cm-operator, .token.operator { color: var(--code-operator) !important; }
+
+/* العناوين */
+.cm-header-1, .markdown-rendered h1 { color: var(--h1-color) !important; font-weight: 700; }
+.cm-header-2, .markdown-rendered h2 { color: var(--h2-color) !important; font-weight: 700; }
+.cm-header-3, .markdown-rendered h3 { color: var(--h3-color) !important; font-weight: 700; }
+.cm-header-4, .markdown-rendered h4 { color: var(--h4-color) !important; font-weight: 700; }
+.cm-header-5, .markdown-rendered h5 { color: var(--h5-color) !important; font-weight: 700; }
+.cm-header-6, .markdown-rendered h6 { color: var(--h6-color) !important; font-weight: 700; }
+
+/* الروابط والنصوص */
+.cm-s-obsidian span.cm-link, .markdown-rendered a { color: var(--text-accent) !important; text-decoration: none; }
+.cm-s-obsidian span.cm-strong, .markdown-rendered strong { font-weight: 700; }
+.cm-s-obsidian span.cm-em, .markdown-rendered em { font-style: italic; }
