@@ -23,8 +23,6 @@ A sleek, modern, and eye-friendly theme for [Obsidian](https://obsidian.md), ins
 #### setting 
 <img width="1034" height="759" alt="setting" src="https://github.com/user-attachments/assets/f8a14b2d-f181-491c-ba31-760655e00d8f" />
 
----
-
 ### Light Mode
 #### preview
 <img width="1915" height="1074" alt="preview" src="https://github.com/user-attachments/assets/31db9e3b-f004-4bac-8e01-7c4ae1ad55cc" />
@@ -32,6 +30,7 @@ A sleek, modern, and eye-friendly theme for [Obsidian](https://obsidian.md), ins
 #### setting 
 <img width="946" height="733" alt="setting" src="https://github.com/user-attachments/assets/eaa552e6-44d0-4fc7-b0d2-814e0d345ca4" />
 
+---
 ## 🚀 Installation
 
 ### Manual Installation
